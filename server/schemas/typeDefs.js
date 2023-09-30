@@ -39,7 +39,7 @@ type Auth {
 type Query {
     dishes: [Dish]
     user(userId: ID!): User
-    dish:(dishId: ID!): Dish
+    dish(dishId: ID!): Dish
 }
 
 type Mutation {
@@ -52,7 +52,6 @@ type Mutation {
     unsaveDish(userId: ID!, dishId: ID!): User
 }
 
-## Inputs
 input CreateUserInput {
     fName: String!
     lName: String!
