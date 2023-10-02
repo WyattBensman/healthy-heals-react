@@ -1,9 +1,11 @@
 // NEED TO CHANGE THIS TO MATCH NOTION
 
+import { SignUp } from "./pages/Signup";
+
 function App() {
   return (
     <>
-      <h1>Hey</h1>
+      <SignUp />
     </>
   );
 }
