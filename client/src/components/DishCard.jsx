@@ -12,7 +12,7 @@ export function DishCard({ title, img, description }) {
                 {title}
               </h5>
             </a>
-            <p class="mb-2 text-sm text-gray-700">{description}</p>
+            <p className="mb-2 text-sm text-gray-700">{description}</p>
             <div className="flex text-center mt-4 mb-2">
               <div className="w-full">
                 <h6 className="mb-1 text-sm font-semibold text-gray-700">
