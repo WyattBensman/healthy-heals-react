@@ -1,13 +1,13 @@
 // NEED TO CHANGE THIS TO MATCH NOTION
 
 import { Navbar } from "./components/Navbar";
-import { Profile } from "./pages/Profile";
+import { CreateDish } from "./pages/CreateDish";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Profile />
+      <CreateDish />
     </>
   );
 }
