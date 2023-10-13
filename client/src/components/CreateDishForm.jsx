@@ -3,8 +3,8 @@ import { useState } from "react";
 export function CreateDishForm() {
   const [dishName, setDishName] = useState("");
   const [img, setImg] = useState("");
-  const [ingredients, setIngredients] = useState([]);
-  const [instructions, setInstructions] = useState([]);
+  const [ingredients, setIngredients] = useState([""]);
+  const [instructions, setInstructions] = useState([""]);
   const [cookTime, setCookTime] = useState();
   const [category, setCategory] = useState("");
 
@@ -25,7 +25,7 @@ export function CreateDishForm() {
               Dish Name
             </label>
             <input
-              value={fName}
+              value={dishName}
               onChange={(e) => setDishName(e.target.value)}
               type="text"
               id="dishName"
@@ -42,7 +42,7 @@ export function CreateDishForm() {
               Image
             </label>
             <input
-              value={lName}
+              value={img}
               onChange={(e) => setImg(e.target.value)}
               type="text"
               id="fName"
@@ -61,8 +61,8 @@ export function CreateDishForm() {
           Ingredients
         </label>
         <input
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={ingredients}
+          onChange={(e) => setIngredients(e.target.value)}
           type="text"
           id="ingredient"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -78,8 +78,8 @@ export function CreateDishForm() {
           Instructions
         </label>
         <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={instructions}
+          onChange={(e) => setInstructions(e.target.value)}
           type="text"
           id="instruction"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -97,7 +97,7 @@ export function CreateDishForm() {
           </label>
           <div className="flex">
             <input
-              value={fName}
+              value={cookTime}
               onChange={(e) => setCookTime(e.target.value)}
               type="text"
               id="cookTime"
@@ -117,7 +117,7 @@ export function CreateDishForm() {
             Category
           </label>
           <input
-            value={lName}
+            value={category}
             onChange={(e) => setCategory(e.target.value)}
             type="text"
             id="category"
